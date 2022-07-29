@@ -12,7 +12,6 @@ type HistoricalBalance @entity {
   timestamp: BigInt!
 }
 
-
 type SpecVersion @entity {
   id: ID! #specVersion
   blockHeight: BigInt!

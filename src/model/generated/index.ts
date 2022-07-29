@@ -1,2 +1,5 @@
 export * from "./account.model"
 export * from "./historicalBalance.model"
+export * from "./specVersion.model"
+export * from "./event.model"
+export * from "./extrinsic.model"
