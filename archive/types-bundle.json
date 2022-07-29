@@ -1,0 +1,23 @@
+{
+    "types": {
+      "AccountId": "[u8; 32]"
+    },
+    "typesAlias": {
+      "assets": {
+        "Balance": "u64"
+      }
+    },
+    "versions": [
+      {
+        "minmax": [0, 1000],
+        "types": {
+          "AccountId": "[u8; 16]"
+        },
+        "typesAlias": {
+          "assets": {
+            "Balance": "u32"
+          }
+        }
+      }
+    ]
+  }
