@@ -83,14 +83,11 @@ function getTransfers(ctx: Ctx): TransferEvent[] {
             if (item.name == "Balances.Transfer") {
                 let e = new BalancesTransferEvent(ctx, item.event)
                 let rec: {from: Uint8Array, to: Uint8Array, amount: bigint}
-                if (e.isV1020) {
-                    let [from, to, amount, ] = e.asV1020
-                    rec = {from, to, amount}
-                } else if (e.isV1050) {
-                    let [from, to, amount] = e.asV1050
+                if (e.isV1) {
+                    let [from, to, amount] = e.asV1
                     rec = {from, to, amount}
                 } else {
-                    rec = e.asV9130
+                    continue
                 }
                 transfers.push({
                     id: item.event.id,
