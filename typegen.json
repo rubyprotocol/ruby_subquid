@@ -1,7 +1,6 @@
 {
   "outDir": "src/types",
   "specVersions": "http://44.206.141.213:8888/graphql",
-  "typesBundle": "./archive/types-bundle.json",
   "events": true,
   "calls": true,
   "storage": true,

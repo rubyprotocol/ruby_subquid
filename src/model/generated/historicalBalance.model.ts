@@ -12,7 +12,7 @@ export class HistoricalBalance {
   id!: string
 
   @Index_()
-  @ManyToOne_(() => Account, {nullable: true})
+  @ManyToOne_(() => Account, {nullable: false})
   account!: Account
 
   @Column_("numeric", {transformer: marshal.bigintTransformer, nullable: false})
